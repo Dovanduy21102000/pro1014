@@ -27,6 +27,6 @@
 
     match($act){
         //Định nghĩa các route
-        
+        '/' => (new AdminBaoCaoThongKeController())->home(),
 
     };
