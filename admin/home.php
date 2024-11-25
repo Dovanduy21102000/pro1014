@@ -49,7 +49,7 @@ include './views/layouts/slidebar.php';
             <div class="icon">
               <i class="ion ion-bag"></i>
             </div>
-            <a href="<?= BASE_URL_ADMIN . '?act=don-hang-moi' ?>" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= BASE_URL_ADMIN . 'don-hang-moi' ?>" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -64,7 +64,7 @@ include './views/layouts/slidebar.php';
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="<?= BASE_URL_ADMIN . '?act=top10' ?>" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= BASE_URL_ADMIN . 'top10' ?>" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -79,7 +79,7 @@ include './views/layouts/slidebar.php';
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="<?= BASE_URL_ADMIN . '?act=don-hoan' ?>" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= BASE_URL_ADMIN . 'don-hoan' ?>" class="small-box-footer">Xem thêm<i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -94,7 +94,7 @@ include './views/layouts/slidebar.php';
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="<?= BASE_URL_ADMIN . '?act=don-bom' ?>" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?= BASE_URL_ADMIN . 'don-bom' ?>" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -218,17 +218,17 @@ include './views/layouts/slidebar.php';
               <div class="row">
                 <div class="col-4 text-center">
                   <div id="sparkline-1"></div>
-                  <div class="text-white">Linh</div>
+                  <div class="text-white">Đỗ Duy</div>
                 </div>
                 <!-- ./col -->
                 <div class="col-4 text-center">
                   <div id="sparkline-2"></div>
-                  <div class="text-white">Đức</div>
+                  <div class="text-white">Hoàng Anh</div>
                 </div>
                 <!-- ./col -->
                 <div class="col-4 text-center">
                   <div id="sparkline-3"></div>
-                  <div class="text-white">Minh</div>
+                  <div class="text-white">Văn Đức</div>
                 </div>
                 <!-- ./col -->
               </div>
