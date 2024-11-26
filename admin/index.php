@@ -1,7 +1,7 @@
 <?php 
   session_start();
     require_once '../commons/env.php';
-    require_once '../commons/function.php.php';
+    require_once '../commons/function.php';
 
     //require controller
 
@@ -17,6 +17,7 @@
     require_once './models/AdminSanPham.php';
     require_once './models/AdminTaiKhoan.php';
     require_once './models/ThongKe.php';
+    
 
 
     //route 
@@ -28,5 +29,8 @@
     match($act){
         //Định nghĩa các route
         '/' => (new AdminBaoCaoThongKeController())->home(),
+        'don-hang' => (new AdminDonHangController()) ->danhSachDonHang(),
 
     };
+    // route don hang
+    
