@@ -25,7 +25,7 @@
           <a href="<?= BASE_URL_ADMIN  ?>" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
-              TRang chủ
+              Trang chủ
             </p>
           </a>
         </li>
