@@ -1,8 +1,8 @@
 <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      By <b> team4</b>
+      By <b> team9</b>
     </div>
-    <strong>Group4</strong>
+    <strong>Website 33Boy_shop</strong>
   </footer>
 
   <!-- Control Sidebar -->

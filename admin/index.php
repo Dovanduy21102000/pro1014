@@ -1,7 +1,7 @@
 <?php 
   session_start();
     require_once '../commons/env.php';
-    require_once '../commons/function.php';
+    require_once '../commons/function.php.php';
 
     //require controller
 
@@ -23,13 +23,17 @@
     //route 
     $act = $_GET['act']??'/';
     //checklogin admin
+    // if ($act !== 'login-admin' &&$act !== 'logout-admin') {
+    //   checkLoginAdmin();
+    // }
 
 
 
     match($act){
         //Định nghĩa các route
+
+        // route báo cáo thống kê - trang chủ
         '/' => (new AdminBaoCaoThongKeController())->home(),
-        'don-hang' => (new AdminDonHangController()) ->danhSachDonHang(),
 
     };
     // route don hang

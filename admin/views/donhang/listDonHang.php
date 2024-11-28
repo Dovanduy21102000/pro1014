@@ -1,5 +1,6 @@
 <?php
 include './views/layouts/slidebar.php';
+include './views/layouts/header.php';
 ?>
 
 <div class="content-wrapper">
