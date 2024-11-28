@@ -60,8 +60,7 @@ include './views/layouts/slidebar.php';
                       <td><?= $key + 1 ?></td>
                       <td><?= $sanPham['ten_san_pham'] ?></td>
                       <td>
-                        <img src="<?= BASE_URL . $sanPham['hinh_anh'] ?>" style="width: 100px;" alt="" 
-                        onerror="this.onerror=null; this.src='https://cdn.pixabay.com/photo/2023/08/18/15/02/cat-8198720_1280.jpg' ">
+                        <img src="<?= BASE_URL . $sanPham['hinh_anh'] ?>" style="width: 100px;" alt="" >
                       </td>
                       <td><?= $sanPham['gia_san_pham'] ?></td>
                       <td><?= $sanPham['so_luong'] ?></td>
