@@ -1,12 +1,12 @@
 <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      By <b>Group 4</b>
+      By <b> team9</b>
     </div>
-    <strong>Website by Group 4</strong>
+    <strong>Website 33Boy_shop</strong>
   </footer>
 
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
+
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
