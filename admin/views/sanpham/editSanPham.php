@@ -151,7 +151,7 @@ include './views/layouts/slidebar.php';
             </div>
           </div>
           <div class="card-body p-0">
-            <form action="<?= BASE_URL_ADMIN . '?sua-album-anh-san-pham' ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= BASE_URL_ADMIN . 'sua-album-anh-san-pham' ?>" method="post" enctype="multipart/form-data">
               <div class="table-responsive">
                 <table id="faqs" class="table table-hover">
                   <thead>
