@@ -23,4 +23,3 @@ match ($act) {
     // sản phẩm
     // 'all-san-pham'=> (new HomeController())->allSanPham(),
 };
->>>>>>> 73d2e20f92ec980623f165cf1932043830d3d0c5

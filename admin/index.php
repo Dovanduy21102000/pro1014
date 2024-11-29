@@ -34,7 +34,7 @@
 
         // route báo cáo thống kê - trang chủ
         '/' => (new AdminBaoCaoThongKeController())->home(),
-        'top10' => (new AdminBaoCaoThongKeController())->to10sanpham(),
+        'top10' => (new AdminBaoCaoThongKeController())->top10sanpham(),
         'don-hang-moi' => (new AdminBaoCaoThongKeController()) ->donHangMoi(),
         'don-bom' => (new AdminBaoCaoThongKeController()) ->donBom(),
         'don-hoan' => (new AdminBaoCaoThongKeController()) ->donHoan(),
@@ -59,7 +59,7 @@
 
          //route bình luận
 
-         'update-trang-thai-binh-luan' => (new AdminSanPhamKeController()) -> updateTrangThaiBinhLuan(),
+         'update-trang-thai-binh-luan' => (new AdminSanPhamController()) -> updateTrangThaiBinhLuan(),
         // route don hang
 
           'don-hang' =>(new AdminDonHangController())->danhSachDonHang(),
