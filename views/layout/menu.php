@@ -13,7 +13,7 @@
                     <div class="col-lg-2">
                         <div class="logo">
                             <a href="<?= BASE_URL ?>">
-                                <img src="assets/img/logo/ai-generated-8206995_640.webp" style="height:150px;width: 150px;" alt="Brand Logo">
+                                <img src="assets/img/logo/petshop.jpg" style="height:150px;width: 150px;" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
