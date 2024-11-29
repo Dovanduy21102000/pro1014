@@ -37,7 +37,7 @@ include './views/layouts/slidebar.php';
                 <h3 class="card-title">Form </h3>
               </div>
               
-              <form action="<?= BASE_URL_ADMIN . '?act=them-quan-tri' ?>" method="POST">
+              <form action="<?= BASE_URL_ADMIN . 'them-quan-tri' ?>" method="POST">
                 <div class="card-body">
                 <div class="form-group">
                   <label>Họ tên</label>

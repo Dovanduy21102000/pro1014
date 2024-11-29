@@ -1,7 +1,7 @@
 <?php
 class AdminDonHangController
 {
-    public $modelDonhang;
+    public $modelDonHang;
 
     public function __construct()
     {
