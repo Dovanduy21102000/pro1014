@@ -23,9 +23,9 @@ require_once './models/ThongKe.php';
 //route 
 $act = $_GET['act'] ?? '/';
 //checklogin admin
-if ($act !== 'login-admin' && $act !== 'logout-admin') {
-  checkLoginAdmin();
-}
+// if ($act !== 'login-admin' && $act !== 'logout-admin') {
+//   checkLoginAdmin();
+// }
 
 
 

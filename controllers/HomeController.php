@@ -35,7 +35,7 @@ class HomeController
             $user = $this->modelTaiKhoan->getTaiKhoanFromEmail($_SESSION['user_client']);
         }
         //binhluan
-        $listBinhLuan = $this->modelSanPham->getBinhLuan($id);
+        $listBinhLuan = $this->modelSanPham->getBinhLuanFromSanPham($id);
 
         $listSanPhamCungDanhMuc = $this->modelSanPham->getListSanPhamDanhMuc($sanPham['danh_muc_id']);
 
