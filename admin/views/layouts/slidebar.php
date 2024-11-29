@@ -22,7 +22,11 @@
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
         <li class="nav-item">
+<<<<<<< HEAD
           <a href="<?= BASE_URL_ADMIN .'/'  ?>" class="nav-link">
+=======
+          <a href="<?= BASE_URL_ADMIN . '/'  ?>" class="nav-link">
+>>>>>>> 474eb3ff1192c7c52a0e505f3320b84cfe29c16f
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Trang chủ
