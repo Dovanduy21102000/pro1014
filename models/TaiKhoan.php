@@ -26,29 +26,36 @@ class TaiKhoan{
    }
 
    public function insertTaiKhoan($ho_ten, $email, $password, $so_dien_thoai, $dia_chi, $chuc_vu_id)
-    {
-        try {
-            $sql = 'INSERT INTO tai_khoans (ho_ten, email, mat_khau,so_dien_thoai,dia_chi , chuc_vu_id)
-             VALUE (:ho_ten,:email,:password,:so_dien_thoai,:dia_chi,:chuc_vu_id)';
+{
+    try {
+        $sql = 'INSERT INTO tai_khoans (ho_ten, email, mat_khau, so_dien_thoai, dia_chi, chuc_vu_id)
+                VALUES (:ho_ten, :email, :password, :so_dien_thoai, :dia_chi, :chuc_vu_id)';
+        
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            ':ho_ten' => $ho_ten,
+            ':email' => $email,
+            ':password' => $password,
+            ':so_dien_thoai' => $so_dien_thoai,
+            ':dia_chi' => $dia_chi,
+            ':chuc_vu_id' => $chuc_vu_id
+        ]);
 
-            $stmt = $this->conn->prepare($sql);
-
-            $stmt->execute([
-                ':ho_ten' => $ho_ten,
-                ':email' => $email,
-                ':password' => $password,
-                ':so_dien_thoai' => $so_dien_thoai,
-                ':dia_chi' => $dia_chi,
-
-                ':chuc_vu_id' => $chuc_vu_id
-
-            ]);
-
-            return true;
-        } catch (Exception $e) {
-            echo "Error" . $e->getMessage();
+        // Kiểm tra xem có dòng nào được chèn không
+        if ($stmt->rowCount() > 0) {
+            return true;  // Thành công
+        } else {
+            // Nếu không có dòng nào được chèn, có thể có vấn đề với câu lệnh SQL
+            throw new Exception("Không thể chèn tài khoản vào cơ sở dữ liệu.");
         }
+    } catch (Exception $e) {
+        // Hiển thị lỗi chi tiết
+        echo "Error: " . $e->getMessage();
+        return false;  // Trả về false nếu có lỗi
     }
+}
+
+    
     public function getDetailTaiKhoan($id)
     {
         try {

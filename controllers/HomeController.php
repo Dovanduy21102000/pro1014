@@ -138,7 +138,7 @@ class HomeController
             $mat_khau_confirm = $_POST['mat_khau_confirm'] ?? '';
             $so_dien_thoai = '';
             $dia_chi = '';
-            $chuc_vu_id = 2;
+            $chuc_vu_id = 0;
 
             
             $errors = []; 
