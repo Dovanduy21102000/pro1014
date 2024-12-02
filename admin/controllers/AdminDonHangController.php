@@ -78,11 +78,11 @@ class AdminDonHangController
                         $trang_thai_id
                 );
 
-                header('Location:' . BASE_URL_ADMIN . '?act=don-hang');
+                header('Location:' . BASE_URL_ADMIN . 'don-hang');
                 exit();
             } else {
                 $_SESSION['flash'] = true;
-                header('Location:' . BASE_URL_ADMIN . '?act=form-sua-don-hang&id_don_hang=' . $don_hang_id);
+                header('Location:' . BASE_URL_ADMIN . 'form-sua-don-hang&id_don_hang=' . $don_hang_id);
                 exit();
             }
             

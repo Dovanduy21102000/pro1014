@@ -27,7 +27,7 @@ include './views/layouts/slidebar.php';
                             <h3 class="card-title">Sửa thông tin đơn hàng: <?= $donHang['ma_don_hang'] ?></h3>
 
                         </div>
-                        <form action="<?= BASE_URL_ADMIN . '?act=sua-don-hang'?>" method="post">
+                        <form action="<?= BASE_URL_ADMIN . 'sua-don-hang'?>" method="post">
                             <input type="text" name="don_hang_id" value="<?= $donHang['id'] ?>" hidden>
                             <div class="card-body">
                                 <div class="form-group">
@@ -70,7 +70,7 @@ include './views/layouts/slidebar.php';
                                         <?php foreach ($listTrangThaiDonHang as $trangThai): ?>
                                             <option value=""
                                             <?php
-                                            if($donHang['trang_thai-id'] > $trangThai['id']
+                                            if($donHang['trang_thai_id'] > $trangThai['id']
                                             || $donHang['trang_thai_id'] ==11
                                             || $donHang['trang_thai_id'] ==12
                                             || $donHang['trang_thai_id'] ==13
@@ -87,7 +87,7 @@ include './views/layouts/slidebar.php';
                                 </div>
                             </div>
                             <div class="cart-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Cập nhật</button>
                             </div>
                         </form>
                     </div>

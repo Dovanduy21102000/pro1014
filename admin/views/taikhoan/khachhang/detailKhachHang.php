@@ -105,11 +105,11 @@ include './views/layouts/slidebar.php';
                     <td><?= $donHang['ten_trang_thai'] ?></td>
 
                     <td>
-                      <a href="<?= BASE_URL_ADMIN . '?act=chi-tiet-don-hang&id_don_hang=' . $donHang['id'] ?>">
+                      <a href="<?= BASE_URL_ADMIN . 'chi-tiet-don-hang&id_don_hang=' . $donHang['id'] ?>">
                         <button class="btn btn-success"><i class="far fa-eye"></i></button>
                       </a>
 
-                      <a href="<?= BASE_URL_ADMIN . '?act=form-sua-don-hang&id_don_hang=' . $donHang['id'] ?>">
+                      <a href="<?= BASE_URL_ADMIN . 'form-sua-don-hang&id_don_hang=' . $donHang['id'] ?>">
                         <button class="btn btn-warning"><i class="fas fa-cogs"></i></button>
                       </a>
 
@@ -158,7 +158,7 @@ include './views/layouts/slidebar.php';
                   <tr>
                     <td><?= $key + 1 ?></td>
                     <td>
-                      <a target="_blank" href=" <?= BASE_URL_ADMIN . '?act=chi-tiet-san-pham&id_san_pham=' . $binhLuan['san_pham_id'] ?>">
+                      <a target="_blank" href=" <?= BASE_URL_ADMIN . 'chi-tiet-san-pham&id_san_pham=' . $binhLuan['san_pham_id'] ?>">
                         <?= $binhLuan['ten_san_pham'] ?>
                       </a>
                     </td>
@@ -166,7 +166,7 @@ include './views/layouts/slidebar.php';
                     <td><?= $binhLuan['noi_dung'] ?></td>
                     <td><?= $binhLuan['trang_thai'] == 1 ? 'Hiển thị' : 'Bị ẩn' ?></td>
                     <td>
-                      <form action="<?= BASE_URL_ADMIN . '?act=update-trang-thai-binh-luan' ?>" method="POST">
+                      <form action="<?= BASE_URL_ADMIN . 'update-trang-thai-binh-luan' ?>" method="POST">
                         <input type="hidden" name="id_binh_luan" value="<?= $binhLuan['id'] ?>">
                         <input type="hidden" name="name_view" value="detail_khach">
                         

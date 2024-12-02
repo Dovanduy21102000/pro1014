@@ -66,14 +66,14 @@ include './views/layouts/slidebar.php';
                       <td>
                         <div class="btn-group">
 
-                        <a href="<?= BASE_URL_ADMIN . '?act=chi-tiet-khach-hang&id_khach_hang=' . $khachHang['id'] ?>">
+                        <a href="<?= BASE_URL_ADMIN . 'chi-tiet-khach-hang&id_khach_hang=' . $khachHang['id'] ?>">
                             <button class="btn btn-success">Chi Tiết</button>
                           </a>
-                          <a href="<?= BASE_URL_ADMIN . '?act=form-sua-khach-hang&id_khach_hang=' . $khachHang['id'] ?>">
+                          <a href="<?= BASE_URL_ADMIN . 'form-sua-khach-hang&id_khach_hang=' . $khachHang['id'] ?>">
                             <button class="btn btn-warning">Sửa</button>
                           </a>
 
-                          <a href="<?= BASE_URL_ADMIN . '?act=reset-password&id_quan_tri=' . $khachHang['id'] ?>" onclick="return confirm('Bạn có chắc chắn không ? ')">
+                          <a href="<?= BASE_URL_ADMIN . 'reset-password&id_quan_tri=' . $khachHang['id'] ?>" onclick="return confirm('Bạn có chắc chắn không ? ')">
                             <button class="btn btn-danger">Reset</button>
                           </a>
                         </div>

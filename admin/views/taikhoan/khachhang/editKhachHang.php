@@ -37,7 +37,7 @@ include './views/layouts/slidebar.php';
                 <h3 class="card-title">Form </h3>
               </div>
               
-              <form action="<?= BASE_URL_ADMIN . '?act=sua-khach-hang' ?>" method="POST">
+              <form action="<?= BASE_URL_ADMIN . 'sua-khach-hang' ?>" method="POST">
                 <input type="hidden" name="khach_hang_id" value="<?= $khachHang['id'] ?>">
                 <div class="card-body">
                 <div class="form-group">

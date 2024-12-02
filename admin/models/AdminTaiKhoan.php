@@ -247,7 +247,7 @@ public function updateTaiKhoan2($id, $ho_ten,$anh_dai_dien, $email, $so_dien_tho
 
                     return $user['email'];
                 } else {
-                    return "tài khoản không có quyền đăng nhập";
+                    return "Tài khoản không có quyền đăng nhập";
                 }
             } else {
                 return "Bạn nhập sai thông tin";

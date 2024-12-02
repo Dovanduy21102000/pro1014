@@ -25,7 +25,7 @@ $act = $_GET['act'] ?? '/';
 //checklogin admin
 // if ($act !== 'login-admin' && $act !== 'logout-admin') {
 //   checkLoginAdmin();
-// }
+//  }
 
 
 

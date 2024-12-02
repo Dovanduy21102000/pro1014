@@ -43,10 +43,10 @@ include './views/layouts/header.php';
                                             <td><?= $donHang['tong_tien'] ?></td>
                                             <td><?= $donHang['ten_trang_thai'] ?></td>
                                             <td>
-                                                <a href="<?= BASE_URL_ADMIN . '?act=chi-tiet-don-hang&id_don_hang=' . $donHang['id'] ?>">
+                                                <a href="<?= BASE_URL_ADMIN . 'chi-tiet-don-hang&id_don_hang=' . $donHang['id'] ?>">
                                                     <button class="btn btn-success"><i class="far fa-eye"></i></button>
                                                 </a>
-                                                <a href="<?= BASE_URL_ADMIN . '?act=form-sua-don-hang&id_don_hang=' . $donHang['id'] ?>">
+                                                <a href="<?= BASE_URL_ADMIN . 'form-sua-don-hang&id_don_hang=' . $donHang['id'] ?>">
                                                     <button class="btn btn-warning"><i class="far fa-cogs"></i></button>
                                                 </a>
                                             </td>

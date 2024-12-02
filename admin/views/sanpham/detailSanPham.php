@@ -103,7 +103,7 @@ include './views/layouts/slidebar.php';
                   <tr>
                     <td><?= $key + 1 ?></td>
                     <td>
-                      <a target="_blank" href=" <?= BASE_URL_ADMIN . '?act=chi-tiet-khach-hang&id_khach_hang=' . $binhLuan['tai_khoan_id'] ?>">
+                      <a target="_blank" href=" <?= BASE_URL_ADMIN . '=chi-tiet-khach-hang&id_khach_hang=' . $binhLuan['tai_khoan_id'] ?>">
                         <?= $binhLuan['ho_ten'] ?>
                       </a>
                     </td>
